@@ -18,6 +18,7 @@
             int[] arr = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
             Console.WriteLine("avg is: " + calculateAverage(arr));
             Console.WriteLine("max is: " + calculateMax(arr));
+            Console.WriteLine("min is: " + calculateMin(arr));
         }
 
         public static double calculateAverage(int[] arr)
@@ -37,6 +38,15 @@
                 if (max < v) max = v;
             }
             return max;
+        }
+        public static int calculateMin(int[] arr)
+        {
+            int min = 0;
+            foreach (var v in arr)
+            {
+                if (min > v) min = v;
+            }
+            return min;
         }
     }
 }
