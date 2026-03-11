@@ -20,7 +20,7 @@
         }
 
         public static double calculateAverage(int[] arr)
-        {
+        { /// trying again
             double sum = 0;
             foreach (var v in arr)
             {
