@@ -16,7 +16,8 @@
             
             Console.WriteLine("Enter an array of numbers");
             int[] arr = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
-            Console.WriteLine(calculateAverage(arr));
+            Console.WriteLine("avg is: " + calculateAverage(arr));
+            Console.WriteLine("max is: " + calculateMax(arr));
         }
 
         public static double calculateAverage(int[] arr)
@@ -27,6 +28,15 @@
                 sum += v;
             }
             return sum / arr.Length;
+        }
+        public static int calculateMax(int[] arr)
+        {
+            int max = 0;
+            foreach (var v in arr)
+            {
+                if (max < v) max = v;
+            }
+            return max;
         }
     }
 }
