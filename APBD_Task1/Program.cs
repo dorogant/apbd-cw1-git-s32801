@@ -13,6 +13,20 @@
             var str1 = Console.ReadLine();
             var str2 = Console.ReadLine();
             Console.WriteLine(str1 + str2);
+            
+            Console.WriteLine("Enter an array of numbers");
+            int[] arr = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+            Console.WriteLine(calculateAverage(arr));
+        }
+
+        public static double calculateAverage(int[] arr)
+        {
+            double sum = 0;
+            foreach (var v in arr)
+            {
+                sum += v;
+            }
+            return sum / arr.Length;
         }
     }
 }
