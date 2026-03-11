@@ -4,8 +4,6 @@
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("   ,___  / /\n  /   /-/-/-\n /    -/-/- \n(___/ / /   ");
-
             Console.WriteLine("Enter two numbers to calculate the sum");
             int number1 = int.Parse(Console.ReadLine());
             int number2 = int.Parse(Console.ReadLine());
