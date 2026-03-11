@@ -4,7 +4,7 @@
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("hello");
+            Console.WriteLine("hi");
             Console.WriteLine("Enter an array of numbers");
             int[] arr = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
             Console.WriteLine("avg is: " + calculateAverage(arr));
